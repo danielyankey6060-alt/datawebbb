@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 
 // Configure API base URL automatically for Netlify Cloud vs Localhost
-const isProduction = import.meta.env.PROD;
-setBaseUrl(import.meta.env.VITE_API_URL || (isProduction ? "" : "http://localhost:5005"));
+const defaultUrl = "";
+setBaseUrl(import.meta.env.VITE_API_URL || defaultUrl);
 
 createRoot(document.getElementById("root")!).render(<App />);
