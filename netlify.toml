@@ -1,4 +1,5 @@
 [build]
+  # Force fresh build trigger
   command = "pnpm build"
   publish = "dist"
 
